@@ -17,7 +17,7 @@ nutrifamiApp.controller('CapacitacionController', function($scope, $anchorScroll
     $scope.modulos = [];
 
     try {
-        $scope.modulos = CapacitacionService.getModulosActivos(3);
+        $scope.modulos = CapacitacionService.getModulosActivos(16);
 
     } catch (err) {
         console.log(err);
