@@ -31,7 +31,7 @@ class JobsController extends AbstractActionController
         
         //print_r($data); die;
         
-        $jsonFile = getcwd().'/public/js/capacitacionAll.JSON'; 
+        $jsonFile = getcwd().'/public/js/capacitacion.JSON'; 
         
         file_put_contents($jsonFile, $data);
         
