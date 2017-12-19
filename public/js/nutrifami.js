@@ -621,7 +621,7 @@ var nutrifami = {
          * nutrifami.training.getCapacitacion(cid);
          */
         getCapacitacion: function(cid) {
-            cid = cid || 3;
+            cid = cid || 16;
             if (typeof nutrifami.training.cap_capacitaciones[cid] !== 'undefined') {
                 return nutrifami.training.cap_capacitaciones[cid];
             } else {
@@ -632,7 +632,7 @@ var nutrifami = {
          * nutrifami.training.getModulosId(cid);
          */
         getModulosId: function(cid) {
-            cid = cid || 3;
+            cid = cid || 16;
             if (typeof nutrifami.training.cap_capacitaciones[cid].modulos !== 'undefined') {
                 return nutrifami.training.cap_capacitaciones[cid].modulos;
             } else {
