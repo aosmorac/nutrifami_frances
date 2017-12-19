@@ -26,7 +26,7 @@ class JobsController extends AbstractActionController
     public function updateCapacitacionJsonAction()
     {
         $capacitacion = new Capacitacion(); 
-        $data = $capacitacion->getAll(array(16));
+        $data = $capacitacion->getAll(array(0, 16));
         //$data = $capacitacion->getAll(15);
         
         //print_r($data); die;
