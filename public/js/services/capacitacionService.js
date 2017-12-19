@@ -38,8 +38,8 @@ nutrifamiApp.factory('CapacitacionService', function(UsuarioService) {
                 tempModulo.activo = false;
             }
 
-            if (typeof usuarioAvance['3'] !== 'undefined' && typeof usuarioAvance['3'][mids[mid]] !== 'undefined') {
-                tempModulo.avance.leccionesFinalizadas = Object.keys(usuarioAvance['3'][mids[mid]]).length;
+            if (typeof usuarioAvance['3'] !== 'undefined' && typeof usuarioAvance['16'][mids[mid]] !== 'undefined') {
+                tempModulo.avance.leccionesFinalizadas = Object.keys(usuarioAvance['16'][mids[mid]]).length;
                 if (this.getLeccionesActivas(tempModulo.id).length == tempModulo.avance.leccionesFinalizadas) {
                     tempModulo.avance.finalizado = true;
                 }
