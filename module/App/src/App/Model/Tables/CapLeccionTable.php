@@ -31,7 +31,7 @@ class CapLeccionTable extends AbstractTableGateway
     
     
     public function getLeccion($lid = 0){
-        $where = array('lec_id' => $lid);
+        $where = array('lec_id' => $lid, 'lec_activo' => 1);
         $resultSet = $this->select($where);
         if ($resultRow = $resultSet->toArray()){
         	return $resultRow[0];
